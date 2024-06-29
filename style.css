@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: red;
+    animation-name: ejemplo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes ejemplo {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+button:active {
+    transform: scale(0.95);
+}
+
+#grid {
+    margin-bottom: 20px;
+}
+
+.letter {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+}
+
+#guesses {
+    font-size: 1.2em;
+    color: #333;
+}
