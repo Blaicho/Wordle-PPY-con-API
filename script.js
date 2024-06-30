@@ -8,7 +8,7 @@ button.addEventListener("click", intentar);
 
 async function init() {
     palabra = await obtenerPalabraAleatoria();
-    console.log(palabra); // Para depuración, puedes eliminar esta línea en producción
+    console.log(palabra); 
 }
 
 async function obtenerPalabraAleatoria() {
@@ -18,7 +18,7 @@ async function obtenerPalabraAleatoria() {
         return data[0].toUpperCase();
     } catch (error) {
         console.error('Error al obtener la palabra:', error);
-        return 'ERROR'; // Palabra por defecto en caso de error
+        return 'ERROR'; 
     }
 }
 
